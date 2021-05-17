@@ -1,0 +1,296 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/yla5xmh.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"; maximum-scale=1.0; user-scalable=0;>
+    <title>linkC</title>
+
+    <style type="text/css">
+        * {
+            background-color: #A1FFD6;
+            cursor: url("cursortest1.svg"), crosshair;margin: 0;
+
+        }
+
+        * {
+            font-family: english-grotesque, transat text, Helvetica, sans-serif;
+            
+        }
+
+
+
+        #header {
+            background:linear-gradient(transparent,black);
+            width: 100%;
+            height: 50%;
+            padding-top: 30%;
+            padding-right: 20%;
+            margin-left: auto;
+            margin-right: auto;
+            
+            top:10%;
+            opacity: 0;
+            color: white;
+            text-align: right;
+            position: absolute;
+            z-index: 999;
+            
+            
+        }
+        #header:hover{opacity:1}
+
+        #gallery {
+            width:100%;
+            
+            padding-top: 0px;
+            margin: 0;
+            background-color: transparent;
+        }
+
+        a {
+            color: black;
+            text-decoration-line: none;
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: auto;
+            text-decoration-line: underline;
+            background-color: transparent;
+        }
+
+        h1,
+        h2 {
+            font-family: english-grotesque, transat text, Helvetica, sans-serif;
+            background: none
+        }
+
+        h3 {
+            font-family: english-grotesque, transat text, Helvetica, sans-serif;
+            background: none;
+            text-align: center;
+            font-size: 20px
+        }
+
+        h1 {
+            font-size: 120px;
+            font-weight: 600;
+        }
+
+        .circlar path {
+            fill: none;
+            background-color: transparent;
+        }
+
+        .circlar {
+            width: 400px;
+            height: 400px;
+            margin: 100px;
+            font-family: english-grotesque, transat text, Helvetica, sans-serif;
+            font-size: 15px;
+            animation: rotation 12s infinite linear;
+
+
+            transform-origin: 60%;
+            background-color: transparent;
+
+        }
+
+        @keyframes rotation {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .circlar svg {
+            display: block;
+            overflow: visible;
+            background-color: transparent;
+        }
+
+        div.menu {
+            z-index: 9999;
+            width: 200px;
+            height: 200px;
+            border-radius: 999em;
+            background-color: aliceblue;
+            position: fixed;
+            top:200px;
+            right: -100px;
+            text-align: right;
+            font-size: 20px;
+
+            color: aliceblue;
+
+
+        }
+
+        div.menu:hover {
+            width: 200px;
+            height: 230px;
+            color: black;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        div.movetoright {
+            animation-name: moveA;
+
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            background-color: transparent;
+            width: 300px;
+            font-size: 50px;
+            margin: 200px;
+        }
+
+        @keyframes moveA {
+            from {
+                margin-left: 0
+            }
+
+            to {
+                margin-left: 800px
+            }
+
+        }
+
+        #colorchange {
+            margin-left: 100px;
+            margin-top: 300px;
+            margin-bottom: 200px;
+            width: 300px;
+            height: 400px;
+            background: aliceblue;
+            animation-name: colorA;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        @keyframes colorA {
+            0% {
+                background-color: aliceblue;
+            }
+
+            25% {
+                background-color: black;
+            }
+
+            50% {
+                background-color: beige;
+            }
+
+            75% {
+                background-color: aqua;
+            }
+
+            100% {
+                background-color: antiquewhite;
+            }
+
+
+
+
+        }
+
+        div.img01 {
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left: 100px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            overflow: hidden;
+            width: 800px;
+            height: 400px;
+            font-size: 0pt;
+            color: white;
+            
+            opacity: 0.9;
+            
+        }
+
+        div.img01:hover {
+           transform: scale(1.2);z-index: 500;filter: grayscale(60%);filter: brightness(1.2);font-size: 40pt;opacity: 1;box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        div.img02 {
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left: 100px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin:0;
+          opacity: 0.9;
+            width:600px;
+            height: 400px;
+            font-size: 0pt;
+            color: white;text-indent:-9999px;overflow: hidden;
+        }
+
+        div.img02:hover {
+            transform: scale(1.2);z-index: 500;filter: grayscale(60%);filter: brightness(1.2)
+                ;font-size: 40pt;opacity: 1;box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.3);
+        }
+
+
+        @media screen and (max-width:600px) {
+            * {margin: 0
+            
+            }
+
+            div.content {
+                width: 100%;
+            }
+
+            div.contentbox {
+                text-align: center
+            }
+
+            h1 {
+                font-size: 60px
+            }
+
+            div.link {
+                font-size: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 40px;
+            }
+            div.img01{width: 100%}
+            div.img02{width: 100%}
+            #gallery{width: 100%}
+            #header{width: 100%;top:0%;height: 40%}
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="menu"><a href="index.html"><br /><br /> HOME</a></div>
+    <div id="header">
+        <h1>PAGE D<br />Video Header<br/></h1>
+    </div>
+    <div id="gallery">
+       
+        <video src="Renovation.mp4" width="100%" height="auto"loop="true"autoplay="true" muted="true"></video>
+    </div>
+    
+    
+
+
+
+</body>
+
+</html>
